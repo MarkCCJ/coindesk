@@ -37,6 +37,7 @@ Body (raw JSON)：
 curl -X POST http://localhost:8080/api/currencies \
 -H "Content-Type: application/json" \
 -d '{"code":"JPY","nameZh":"日圓"}'
+
 3.修改（PUT）
 Method：PUT
 URL：http://localhost:8080/api/currencies/JPY
@@ -50,11 +51,13 @@ Body (raw JSON)：
 curl -X PUT http://localhost:8080/api/currencies/JPY \
 -H "Content-Type: application/json" \
 -d '{"code":"JPY","nameZh":"日本圓(已更新)"}'
+
 4.刪除（DELETE）
 Method：DELETE
 URL：http://localhost:8080/api/currencies/JPY
 Headers：無需設定
 curl -X DELETE http://localhost:8080/api/currencies/JPY
+
 5.呼叫 Coindesk 資料轉換 API（GET）
 Method：GET
 URL：http://localhost:8080/api/coindesk/fetch-transformed
