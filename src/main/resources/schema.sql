@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS currencies;
+
+CREATE TABLE currencies (
+  code VARCHAR(10) NOT NULL PRIMARY KEY,
+  name_zh VARCHAR(255) NOT NULL
+);
